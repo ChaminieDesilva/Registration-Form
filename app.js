@@ -115,23 +115,23 @@ function validateUserType(usertypes){
         return false;
     }
     row.className = 'row mb-1 success';
-    radio.innerHTML = 'Completed';
+    radio.innerHTML = 'Selected';
     return true;
 }
 
-function validatePaymentType(paymenType){
-    const value = paymenType.value;
+function validatePaymentType(paymentType){
+    const value = paymentType.value;
     const small = document.getElementById("small1");
     const row = small.parentElement; 
     
     if(value == "Default"){
         row.className = 'row mb-1 error';
         small.innerHTML = 'Required';
-        paymenType.className = 'form-select error';
+        paymentType.className = 'form-select error';
         return false;
     }
     small.innerHTML = '';
-    paymenType.className = 'form-select success';
+    paymentType.className = 'form-select success';
     return true;
 }
 
