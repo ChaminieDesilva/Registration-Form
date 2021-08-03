@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <script src="app.js"></script> 
+</head>
+<body>
+    <div class="container bg-light col-12 justify-content-center border">
+        <h2 class="text-center mt-5 mb-4">Enter User Informations</h2>
+        <form action="" id='registration' onsubmit = "return validateForm()" >
+            <div class="row ms-2">
+                <div class="form-group col-12 col-lg-5 mb-4">
+                    <label for="FirstName">First Name</label>
+                    <small>Error</small>
+                    <input type="text" class="form-control" id="FirstName" placeholder="Type first name here">
+                </div>
+                <div class="form-group col-12 col-lg-2"></div>
+                <div class="form-group col-12 col-lg-5 mb-4">
+                    <label for="inputLastName">Last Name</label>
+                    <small>Error</small>
+                    <input type="text" class="form-control" id="LastName" placeholder="Type last name here">
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="form-group col-12 col-lg-5 mb-4">
+                    <label for="inputEmail">Email Address</label>
+                    <small>Error</small>
+                    <input type="email" class="form-control" id="Email" placeholder="Type email address here" >
+                </div>
+                <div class="form-group col-12 col-lg-2"></div>
+                <div class="form-group col-12 col-lg-5 mb-4">
+                    <div class="row mb-1">
+                        <label for="inputUserType" id="UserType">User Type</label>
+                        <small id="radio">Error</small>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-lg-4">
+                            <div class="form-check-inline">   
+                                <input type="radio" class="form-check-input" name="UserType"  value="school" ><span class="ms-1">School</span>    
+                            </div>   
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" name="UserType"  value="university"><span class="ms-1">University</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" name="UserType" value="employee"><span class="ms-1">Employee</span>
+                            </div>
+                        </div>   
+                    </div>       
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="form-group col-12 col-lg-5 mb-4 ">
+                    <label for="inputContactNumber">Contact Number</label>
+                    <small>Error</small>
+                    <input type="tel" class="form-control" id="ContactNumber" placeholder="Type contact number here" >
+                </div>
+                <div class="form-group col-12 col-lg-2"></div>
+                <div class="form-group col-12 col-lg-5 mb-4 ">
+                    <div class="row mb-1">
+                        <label for="inputPaymentType">Payment Type</label>
+                        <small id="small1">Error</small>
+                    </div>
+                    <select class="form-select" aria-label="inputPaymentType" id="PaymentType">
+                        <option selected="" value="Default" >Enter a Payment Type</option>
+                        <option value="1">Full Payment</option>
+                        <option value="2">Half Payment</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row ms-2">
+                <div class="form-group col-12 col-lg-5 mb-5 ">
+                    <label for="Address">Address</label>
+                    <small>Error</small>
+                    <textarea class="form-control" id="Address" rows="5" placeholder="Type user address here"></textarea>
+                </div>
+            </div>
+            <div class="row mb-4 mt-3">
+                <div class="form-group col-2 offset-5">
+                    <!-- button type="button" class="btn btn-primary" id="submitbutton" >SUBMIT</button -->
+                    <input type="submit" value="SUBMIT">
+                </div> 
+            </div>
+            
+        </form>
+
+    </div> 
+</body>
+</html>

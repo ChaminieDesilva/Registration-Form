@@ -1,0 +1,77 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+
+h2{
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+::placeholder{
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+:-ms-input-placeholder {
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: normal;
+  }
+  
+  ::-ms-input-placeholder { 
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: normal;
+  }
+label{
+    font-size: 14pt;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+span{
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+select{
+    font-size: 12pt;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    
+}
+button{
+    font-size: 10pt;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+.form-group.success input{
+    border-color: #03ac49;
+}
+.form-group.error input{
+    border-color: #cc2512;
+}
+
+.form-group.error textarea{
+    border:solid 1px #cc2512;
+}
+
+.form-group.success textarea{
+    border: solid 1px #03ac49;
+}
+
+.row small{
+    visibility: visible;
+}
+.row.success small{
+    visibility: visible;
+    color: #03ac49;
+}
+.row.error small{
+    visibility: visible;
+    color: #cc2512;
+}
+.form-group.success small{
+    visibility: visible;
+    color: #03ac49;
+}
+.form-group.error small{
+    visibility: visible;
+    color: #cc2512;
+}
