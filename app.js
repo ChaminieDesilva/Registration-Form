@@ -40,6 +40,7 @@ function validateForm(){
     window.setTimeout(()=>{
         if(field1 && field2 && field3 && field4 && field5 && field6 && field7 ){
             alert("User Added Successfully");
+            window.location.reload();
             return true;
         }
     }, 1000);
