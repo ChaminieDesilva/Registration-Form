@@ -9,7 +9,16 @@ var address;
 
 window.addEventListener('load', (event) => {
     console.log('page is fully loaded');  
+    getElements();
 
+    window.addEventListener('submit', (event) =>{
+        event.preventDefault();
+        if(validateForm()) window.location.reload(); 
+    });
+  });
+  
+
+function getElements(){
     form = document.getElementById('registration');
     firstName = document.getElementById('FirstName');
     lastName = document.getElementById('LastName');
@@ -18,14 +27,10 @@ window.addEventListener('load', (event) => {
     contactNumber = document.getElementById('ContactNumber');
     paymentType = document.getElementById('PaymentType');
     address = document.getElementById('Address');
-
-    form.addEventListener('submit', (event) =>{
-        event.preventDefault();
-        if(validateForm()) window.location.reload(); 
-    });
-  });
+}
 
 function validateForm(){
+    console.log("validating");
     const field1 = validateName(firstName);
     const field2 = validateName(lastName);
     const field3= validateEmail(email);
@@ -39,10 +44,11 @@ function validateForm(){
             alert("User Added Successfully");
             return true;
         }
-    }, 2000);
+    }, 1000);
 
     return false;
-   
+
+    
 }
 
 function validateName(name){
@@ -119,13 +125,15 @@ function validatePaymentType(paymenType){
     const value = paymenType.value;
     const small = document.getElementById("small1");
     const row = small.parentElement; 
+    
     if(value == "Default"){
         row.className = 'row mb-1 error';
         small.innerHTML = 'Required';
+        paymenType.className = 'form-select error';
         return false;
     }
-    row.className = 'row mb-1 success';
-    small.innerHTML = 'Completed';
+    small.innerHTML = '';
+    paymenType.className = 'form-select success';
     return true;
 }
 

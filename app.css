@@ -75,3 +75,9 @@ button{
     visibility: visible;
     color: #cc2512;
 }
+.form-select.error{
+    border: 1px solid #cc2512;
+}
+.form-select.success{
+    border: 1px solid #03ac49;
+}
