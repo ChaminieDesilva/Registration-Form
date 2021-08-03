@@ -7,8 +7,7 @@ var contactNumber;
 var paymentType;
 var address;
 
-window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');  
+window.addEventListener('load', (event) => { 
     getElements();
 
     window.addEventListener('submit', (event) =>{
@@ -30,7 +29,6 @@ function getElements(){
 }
 
 function validateForm(){
-    console.log("validating");
     const field1 = validateName(firstName);
     const field2 = validateName(lastName);
     const field3= validateEmail(email);
