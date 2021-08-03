@@ -57,7 +57,7 @@ button{
 }
 
 .row small{
-    visibility: visible;
+    visibility: hidden;
 }
 .row.success small{
     visibility: visible;

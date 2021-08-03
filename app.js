@@ -34,10 +34,15 @@ function validateForm(){
     const field6 = validateUserType(userTypes);
     const field7 = validatePaymentType(paymentType);
 
-    if(field1 && field2 && field3 && field4 && field5 && field6 && field7 ){
-        alert("User Added Successfully");
-        return true;
-    }
+    window.setTimeout(()=>{
+        if(field1 && field2 && field3 && field4 && field5 && field6 && field7 ){
+            alert("User Added Successfully");
+            return true;
+        }
+    }, 2000);
+
+    return false;
+   
 }
 
 function validateName(name){
